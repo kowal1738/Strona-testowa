@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formularz HTML</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+
+		<form action="" method="post">
+		
+			<!-- akapit z opisem, niżej pole tekstowe (type="text") o nazwie "imie" (name="imie") -->
+			<p>Podaj swoje imię</p>
+			<input type="text" name="imie">
+			
+			
+			<!-- akapit z opisem, niżej pole tekstowe (type="text") o nazwie "nazwisko" (name="nazwisko") -->
+			<p>Podaj swoje nazwisko</p>
+			<input type="text" name="nazwisko">
+			
+			
+			<!-- akapit z opisem, niżej grupa pól typu radio o nazwie "imie" (name="imie") -->
+			<p>Zakres wiekowy</p>
+			<input type="radio" name="zakres_wiekowy" value="18-30">18-30<br>
+			<input type="radio" name="zakres_wiekowy" value="31-40">31-40<br>
+			<input type="radio" name="zakres_wiekowy" value="41-50">41-50<br>
+			<input type="radio" name="zakres_wiekowy" value="51+">51+<br>
+			
+			
+			<!-- akapit z opisem, niżej pole typu select o nazwie "plec" (name="plec")
+				zawierający trzy elementy listy: puste o wartości "wybierz" i dwa o wartościach "m" i "k"
+				z wartościami analogicznie "Mężczyzna" i "Kobieta" -->
+			<p>Płeć</p>
+			<select name="plec">
+				<option value="">Wybierz</option>
+				<option value="m">Mężczyzna</option>
+				<option value="k">Kobieta</option>
+			</select>
+			
+			<!-- akapit z opisem, niżej pole tekstowe wieloliniowe (textarea) o nazwie "osobie" (name="osobie") -->
+			<p>Napisz coś o sobie</p>
+			<textarea name="osobie"></textarea>
+			
+			
+			<!-- akapit z opisem, niżej pola typu checkbox w grupie o nazwie "hobby" -->
+			<p>Hobby</p>
+			<input type="checkbox" name="hobby[]" value="Podróże"> Podróże<br>
+			<input type="checkbox" name="hobby[]" value="Jedzenie"> Jedzenie<br>
+			<input type="checkbox" name="hobby[]" value="Jazda konna"> Jazda konna<br>
+			
+			<!-- pole z wartością ukrytą (type="hidden") -->
+			<input type="hidden" name="zestrony" value="moja strona domowa">
+			
+			<br><br>
+			<!-- dwa przyciski, jeden resetujący formularz, drugi wysyłający formularz -->
+			<input type="reset" value="Wyczyść"> 
+			<input type="submit" value="Wyślij"> 
+			
+		</form>
+
+	</body>
+</html>
+

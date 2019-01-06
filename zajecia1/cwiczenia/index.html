@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tytuł strony</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Opis strony">
+		<meta name="keywords" content="słowa, kluczowe">
+		
+		<!-- wewnętrzny arkusz CSS -->
+		<style type="text/css">
+		
+			.p1 {
+				text-align:center;
+			}
+			
+			.p2 {
+				text-align: right;
+				font-weight: bold;
+				text-decoration: underline;
+			} 
+			
+			.p3 {
+				font-style: italic; 
+				text-decoration: underline;
+			}
+			
+			.img1 {
+				border: 2px solid red;
+			}
+			
+			a {
+				color: orange;
+				text-decoration:underline;
+			}
+		
+		</style>
+
+	</head>
+	<body>
+		
+		<!-- akapit wycentrowany -->
+		<p align="center">Witaj świecie</p>
+		
+		<!-- akapit wyrównany do prawej strony -->
+		<p align="right"><b>Witaj świecie</b></p>
+		
+		<!-- akapit wyrównany domyślnie, kursywa, podkreślenie -->
+		<p><i><u>Jestem pochylony i podkreślony</u></i></p>
+		
+		<!-- Zdjęcie las.jpg (w katalogu img), objęte klasą CSS o nazwie "img1" -->
+		<img class="img1" src="img/las.jpg" width="300" alt="Las krzyży"><br>
+		
+		<!-- link do strony http://www.google.pl otwierający się w nowym oknie (target="_blank") -->
+		<a href="http://www.google.pl" target="_blank">Link do Google</a><br>
+		
+		<!-- link do strony http://www.google.pl w postaci obrazka -->
+		<a href="http://www.google.pl" target="_blank">
+			<img src="img/las.jpg" alt="Las krzyży">
+		</a>
+		
+		<!-- złamanie tekstu (break line) -->
+		<br>
+		
+		<!-- lista punktowa, rodzaj "kwadrat" (type="square") -->
+		<ul type="square">
+			<li>Element 1</li>
+			<li>Element 2</li>
+			<li>Element 3</li>
+		</ul>
+		
+		<!-- lista numeracyjna -->
+		<ol>
+			<li>Element 1</li>
+			<li>Element 2</li>
+			<li>Element 3</li>
+		</ol>
+		
+		<!-- tabelka, dwa wiersze, dwie kolumny -->
+		<table border="1" cellpadding="0" cellspacing="0" width="100%">
+		
+			<tr>
+				<td>1/1</td>
+				<td>2/1</td>
+			</tr>
+			
+			<tr>
+				<td>a</td>
+				<td>b</td>
+			</tr>
+		
+		
+		</table>
+		
+		<!-- akapit wycentrowany za pomocą CSS przy znaczniku (style="...") -->
+		<p style="text-align:center;">Witaj świecie</p>
+		
+		<!-- akapit wyrównany do prawej strony i pogrubiony za pomocą CSS -->
+		<p style="text-align: right;font-weight: bold;">Witaj świecie</p>
+		
+		<!-- akapit z kursywą i podkreślony za pomocą CSS -->
+		<p style="font-style: italic; text-decoration: underline;">Jestem pochylony i podkreślony</p>
+		
+		
+		<!-- trzy akapity korzystające z klasy "p1" wewnętrznego arkusza stylów (na górze) -->
+		<p class="p1">Witaj świecie</p>
+		<p class="p1">Witaj świecie</p>
+		<p class="p1">Witaj świecie</p>
+		
+		<!-- trzy akapity korzystające z klasy "p2" wewnętrznego arkusza stylów (na górze) -->
+		<p class="p2">Witaj świecie</p>
+		<p class="p2">Witaj świecie</p>
+		<p class="p2">Witaj świecie</p>
+		
+		<!-- trzy akapity korzystające z klasy "p3" wewnętrznego arkusza stylów (na górze) -->
+		<p class="p3">Jestem pochylony i podkreślony</p>
+		<p class="p3">Jestem pochylony i podkreślony</p>
+		<p class="p3">Jestem pochylony i podkreślony</p>
+		
+	
+	</body>
+</html>

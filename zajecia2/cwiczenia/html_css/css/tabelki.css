@@ -1,0 +1,19 @@
+
+/* style dla tabelki */
+
+.tabelka1 {
+	border: 2px solid black;
+	width: 500px;
+	height: 300px;
+	border-spacing: 0;
+}
+
+
+.wiersz1 {
+	background-color: orange;
+}
+.wiersz2 {
+	background-color: grey;
+}
+
+
